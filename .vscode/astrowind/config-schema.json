@@ -14,6 +14,9 @@
         "base": {
           "type": "string"
         },
+        "icon": {
+          "type": "string"
+        },
         "trailingSlash": {
           "type": "boolean"
         },
@@ -21,7 +24,7 @@
           "type": "string"
         }
       },
-      "required": ["name", "site", "base", "trailingSlash"],
+      "required": ["name", "site", "icon", "base", "trailingSlash"],
       "additionalProperties": false
     },
     "metadata": {
