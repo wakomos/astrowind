@@ -112,6 +112,11 @@ export interface Headline {
   classes?: Record<string, string>;
 }
 
+export interface Quote {
+  text: string;
+  by?: string;
+}
+
 interface TeamMember {
   name?: string;
   job?: string;

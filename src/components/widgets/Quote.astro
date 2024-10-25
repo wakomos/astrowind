@@ -1,0 +1,22 @@
+---
+import type { Quote as Props } from '~/types';
+
+const {
+  text,
+  by,
+} = Astro.props;
+
+const quote = by ? `"${text}"` : text
+
+---
+
+<section class="bg-blue-50 dark:bg-slate-800 not-prose p-10 md:p-10" id="learn">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
+    {quote}
+    { by && (
+      <span>&nbsp;—&nbsp;</span>
+      <span class="font-semibold">{by}</span>
+    )}
+  </div>
+</section>
+
